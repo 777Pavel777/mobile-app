@@ -1,0 +1,74 @@
+.hero-section {
+  position: relative;
+  background: var(--dark-bg);
+  background-repeat: no-repeat;
+  background-image: url(../images/mobile/Phone_mobile@2x.png);
+  background-size: 422px 456px;
+  background-position-x: calc(50% + 75px);
+  background-position-y: calc(50% + 38px);
+  color: var(--white);
+}
+
+.hero {
+  max-width: 320px;
+
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 127px;
+}
+
+.hero-title {
+  font-size: 24px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-text {
+  margin-bottom: 28px;
+}
+
+.hero-info-item {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.hero-info-item:last-child {
+  margin-bottom: 40px;
+}
+
+.hero-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 2px;
+  border-radius: 5px;
+  background-image: var(--linear-bg);
+}
+
+.hero-btn {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 100px;
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  background-image: var(--linear-bg);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-image: none;
+  background-color: var(--dark-bg);
+}
