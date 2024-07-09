@@ -49,8 +49,18 @@
   }
 }
 
-@media screen and (min-width: 430px) and (max-width: 768px) {
+@media screen and (min-width: 430px) and (max-width: 1280px) {
   .mobile-app-img {
     width: 560px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .mobile-app-title {
+    font-size: 24px;
+  }
+
+  .mobile-app-text {
+    font-size: 16px;
   }
 }

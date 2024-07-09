@@ -63,3 +63,13 @@
 .testimonials-image {
   margin: 0 auto;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .testimonials {
+    padding: 40px 0;
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+  }
+}

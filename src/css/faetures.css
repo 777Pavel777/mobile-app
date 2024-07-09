@@ -1,6 +1,7 @@
 .features {
   position: relative;
-  padding: 40px 0;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .features::before {
@@ -79,3 +80,71 @@
   width: 28px;
   height: 28px;
 }
+
+/* ==================================== TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .features {
+    padding-bottom: 62px;
+  }
+
+  .features > .container {
+    padding: 0;
+  }
+
+  .features-title {
+    font-size: 24px;
+  }
+
+  .features-text {
+    width: 704px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+    font-size: 16px;
+  }
+
+  .features-image-container {
+    display: flex;
+    float: left;
+    margin-right: 32px;
+  }
+
+  .features-wrapper {
+    margin: 0 auto;
+    padding-right: 71px;
+  }
+
+  .features-item {
+    max-width: 620px;
+    margin-bottom: 50px;
+  }
+
+  /* .features-item:nth-child(5) {
+    position: absolute;
+  } */
+
+  .clear {
+    display: flex;
+    column-gap: calc(14% + 30px);
+    padding-left: 32px;
+  }
+
+  .clear > .features-item:nth-child(1) {
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .clear > .features-item:nth-child(2) {
+    padding: 0;
+  }
+
+  .features-item-title {
+    font-size: 16px;
+  }
+
+  .features-item-text {
+    font-size: 14px;
+  }
+}
+
+/* ==================================== /TABLET */

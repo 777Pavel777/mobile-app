@@ -7,13 +7,17 @@ header {
 .header-menu {
   display: flex;
   justify-content: space-between;
-  padding: 32px 20px;
+  padding: 31px 20px;
   background: var(--header-bg);
 }
 
 .header-logo {
   font-size: 28px;
   font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+.header-logo:hover {
+  transform: scale(1.1);
 }
 
 .header-btn {
@@ -27,8 +31,18 @@ header {
 }
 
 .header-links {
-  display: flex;
-  gap: 20px;
+  display: none;
+}
+
+.header-link-item {
+  font-size: 12px;
+}
+
+.header-link-item:hover {
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*====================================== BURGER */
@@ -80,3 +94,22 @@ header {
 }
 
 /*====================================== /BURGER */
+
+/* ===================================== TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header-menu {
+    padding: 31px 32px;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}

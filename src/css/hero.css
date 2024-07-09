@@ -11,6 +11,7 @@
 
 .hero {
   max-width: 320px;
+  position: relative;
 
   margin: 0 auto;
   padding-top: 100px;
@@ -55,12 +56,11 @@
 
 .hero-btn {
   display: flex;
-  position: relative;
   justify-content: center;
   width: 200px;
   font-size: 16px;
   font-weight: 700;
-  padding: 18px 100px;
+  padding: 21px 100px;
   color: var(--white);
   border: none;
   border-radius: 5px;
@@ -72,3 +72,60 @@
   background: none;
   background-color: var(--dark-bg);
 }
+
+.hero-img {
+  display: none;
+}
+
+/* ============================================= TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-section {
+    background-image: url(../img/tablet/phone_bg_tablet@2x.png);
+    background-size: 324px 327px;
+    background-position-x: calc(50% + -17px);
+    background-position-y: calc(50% + 80px);
+    background-repeat: no-repeat;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .hero-text {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .hero {
+    max-width: 768px;
+
+    padding-top: 60px;
+    padding-bottom: 143px;
+  }
+
+  .hero-info-item {
+    font-size: 14px;
+  }
+
+  .hero-info-item:last-child {
+    margin-bottom: 62px;
+  }
+
+  .hero-btn-container {
+    display: flex;
+    justify-content: start;
+  }
+
+  .hero-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -88px;
+    width: 380px;
+    height: 480px;
+  }
+}
+
+/* ============================================= /TABLET */
