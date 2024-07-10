@@ -15,44 +15,50 @@
 
     
     <script type="module" crossorigin src="/mobile-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/mobile-app/assets/index-07cfee76.css">
+    <link rel="stylesheet" href="/mobile-app/assets/index-88e43069.css">
   </head>
   <body>
     <header>
   <nav class="header-menu">
     <a class="header-logo" href="/index.html">Mobileapp</a>
 
-    <ul class="header-links">
-      <li><a class="header-link-item" href="#">HOME</a></li>
-      <li><a class="header-link-item" href="#">FEATURES</a></li>
-      <li><a class="header-link-item" href="#">TEAM</a></li>
-      <li><a class="header-link-item" href="#">TESTIMONIALS</a></li>
-      <li><a class="header-link-item" href="#">CONTACT</a></li>
-    </ul>
-
     <button class="header-btn" type="button">
-      <svg
-        class="ham hamRotate burger"
-        viewBox="0 0 100 100"
-        width="50"
-        onclick="this.classList.toggle('active')"
-      >
-        <path
-          class="line top"
-          d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
-        />
-        <path class="line middle" d="m 30,50 h 40" />
-        <path
-          class="line bottom"
-          d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
-        />
+      <svg class="btn-close" width="32" height="32">
+        <use href="../img/svg/symbol-defs.svg#icon-burger"></use>
       </svg>
     </button>
+
+    <ul class="header-links">
+      <li><a class="header-link-item" href="#index.html">HOME</a></li>
+      <li><a class="header-link-item" href="#features">FEATURES</a></li>
+      <li><a class="header-link-item" href="#team">TEAM</a></li>
+      <li><a class="header-link-item" href="#testimonials">TESTIMONIALS</a></li>
+      <li><a class="header-link-item" href="#contact">CONTACT</a></li>
+    </ul>
   </nav>
 </header>
 
 
     <main>
+      <div class="backdrop is-open-modal">
+  <div class="modal-container">
+    <a class="modal-logo" href="/index.html">Mobileapp</a>
+
+    <button class="modal-btn-close" type="button">
+      <svg class="btn-close" width="32" height="32">
+        <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="modal-links">
+    <li><a class="modal-link-item" href="#index.html">HOME</a></li>
+    <li><a class="modal-link-item" href="#features">FEATURES</a></li>
+    <li><a class="modal-link-item" href="#team">TEAM</a></li>
+    <li><a class="modal-link-item" href="#testimonials">TESTIMONIALS</a></li>
+    <li><a class="modal-link-item" href="#contact">CONTACT</a></li>
+  </ul>
+</div>
+
       <section class="hero-section">
   <div class="container">
     <div class="hero">
@@ -62,19 +68,19 @@
       <ul class="hero-info">
         <li class="hero-info-item">
           <svg class="hero-arrow-img" width="18" height="18">
-            <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-arrow"></use>
+            <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-arrow"></use>
           </svg>
           <p>Real-time updates and notifications for timely information</p>
         </li>
         <li class="hero-info-item">
           <svg class="hero-arrow-img" width="18" height="18">
-            <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-arrow"></use>
+            <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-arrow"></use>
           </svg>
           <p>Robust analytics and reporting for data-driven insights</p>
         </li>
         <li class="hero-info-item">
           <svg class="hero-arrow-img" width="18" height="18">
-            <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-arrow"></use>
+            <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-arrow"></use>
           </svg>
           <p>Offline capabilities for uninterrupted use</p>
         </li>
@@ -85,12 +91,18 @@
           <button class="hero-btn" type="submit">Download</button>
         </span>
       </div>
-      <img class="hero-img" src="/mobile-app/assets/phone@2x-23aff7c5.png" alt="phone" />
+      <img
+        class="hero-img"
+        srcset="/mobile-app/assets/phone-1391b9ca.png 356w, /mobile-app/assets/phone@2x-23aff7c5.png 712w, /mobile-app/assets/phone-f6aa21cf.png 360w, /mobile-app/assets/phone@2x-2c5b2088.png 720w"
+        sizes="(min-width: 1280px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px "
+        src="/mobile-app/assets/phone-1391b9ca.png"
+        alt="phone"
+      />
     </div>
   </div>
 </section>
 
-      <section class="features">
+      <section class="features" id="features">
   <div class="container">
     <h2 class="features-title">KEY FEATURES</h2>
     <p class="features-text">
@@ -111,12 +123,7 @@
     <ul class="features-wrapper">
       <li class="features-item">
         <div class="features-item-img">
-          <img
-            src="data:image/png;base64,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"
-            alt="drop"
-            width="28"
-            height="28"
-          />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT8SURBVHgB7ZVrbBRVFMfP3Nl57Ha3bpFCoa1sbUtpENKCYAliuxKCJgIpShQxQmNEYzCWICEoaAEbxUShflAMHwCjgWAij/CIArYJWN4WKeXVLbt9ULuPtrPPmdmdmesdzJildhvbGD8Y/pubyT1nzvndc8+9OwAP9F/J5Vr3bCrf9EvYMqWxbQqMQCiVA2NcdP36mgmD+Wi14wOOMtU76pvs8G/L5Vr/bmPjarMxLznrdsy+0JGYda4DTzrd9iEMU2goZ2vr+oUYaxsyH2brDBtP0zUsRZtYCgGFoXpgldeuLWGbmqrtIwIWFn58GGOqurBo60p9Xnb2dwcL9HIWU8ABRYKRnQdrdXIMx+UttFr5F1LlpGAYKr/Y/ROHYZ6ZhOmBd0QZEqAJohbM8zhLhX+SI2WFR5w9K49VdC035gvOdT+PCIwhKJ6MNLKlSK8SU3Z2QJUjAvrd4jeyx3/ImIcRtZUhW8kSCEfpQFLlvT6SJ0bv6L1snBUcdXRK6yIYCbDKkydVekoFh32bfcb2y9vIPck3wZ9AG6X3kATrUP1Hqkw7EbvTnSa1cRO5g6/O3LMuVV5TKsfiafVl7pBvM8cDiwoyymlSid47GgO4ExqEVA10G03WrIIGcecY1HNZ/jbU0rXotmQrnj/pSLNbvvXKbfea35Lz/u3QkAtPzSje81lUxKU4qmx65NCCqRJodSaSXNEAFALUMCYQTOb60IhNAxUTLFY2ueYX1eh5XprU5BDAW++WWj695Vnz1aBbun8/phdV7D3mk8KhG+1VzpuB1xsCcQUFSUUCIUUJQCYjTqDEdG/oC9AXklDJImSFMXLtu1nq4aWxpZnmCavHla2dNijw3P6fN1y66z7f4Xm7xrD96szZTmE6T1Lx+TjpmT4SOlAHkQ1SyMEhTw9WsNO9cPL7yfkOkjPQLlzcgbuiSwcFdgZ8KzSlc3ey7bGj7Y+zDJRfn5tdJilQRQAeHaLqAyGsYvRJLMo9YbWkF0883jYXBkgje4LiYIGBPfzlaW++KYdyRe9KrpgszHzuzNR+w1d44PbJ9HRzPo2YWp+ET7I8WkEheo4Wj69KA+7JBJZqQv3+eOeLJXkDeFRu9trWuOzf4A3s3qcb/jqlkf7gRtN4BgJspIA05hli2mv4lPbeZX2PZl6xs9rOHNbUTU7MwYTKH9ZMpuNRKTgh2BtQ1ES8MJk0umirzSrHvlBEwW/A7gP2+m/u6myUy3fFrjrsLJ2bHOyunuXN+b55qaBp9RFFG29h6LfSWRH6YiKE+gVIyNJHvtdme4z3Cwq2VDBY3SnFVb8U7l18X8kDtgDG2JZV8tb8z9PMGS2jrRnbTl9dccrwZX/X/B5jYWpNiAaaRhANhiERCV/xvjGntHj61+N4kJfQGqpMROMl4VCo7k5PzSYShocE6sri33Qw5sy1Zpu90mazmXnefIFhmRsapfl7n8pahaxMFkPuAuqPQoYv1sD2yzlhQSyQI/KtcJ+4NxaL1HmEGuFAhduOM1R28YEC35DAZDnsWyo4ji/heG6a2WrJ5c1UmvoQmqzaeAvljfwoeiMtYhiaTZHAqWtibacRt6uiyTHWYr9hGcXwYY/oXHCmsAFgiL82Qx5ho/5iQ7JtVO0P82iL+WX/6qVVqeLELpSlZau8akMgidE5Ro5hfQ+Hqx25J6owk5jRHPZu/tJf1QMP9L/QH/TlPKui2hx6AAAAAElFTkSuQmCC" alt="drop" width="28" height="28" />
         </div>
 
         <div class="features-item-info">
@@ -216,30 +223,35 @@
 
       <section class="mobile-app">
   <div class="container">
-    <h2 class="mobile-app-title">WATCH THE VIDEO</h2>
-    <p class="mobile-app-text">
-      Watch the video below to see our mobile app in action. With a
-      user-friendly interface, personalized recommendations, secure
-      transactions, and real-time updates, our app is available for download on
-      both Apple and Android devices and is designed to make your life easier.
-    </p>
-    <div class="mobile-appStore">
-      <span class="mobile-app-item">
-        <svg class="mobile-app-group" width="30" height="30">
-          <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-apple"></use>
-        </svg>
-      </span>
+    <div>
+      <h2 class="mobile-app-title">WATCH THE VIDEO</h2>
+      <p class="mobile-app-text">
+        Watch the video below to see our mobile app in action. With a
+        user-friendly interface, personalized recommendations, secure
+        transactions, and real-time updates, our app is available for download
+        on both Apple and Android devices and is designed to make your life
+        easier.
+      </p>
+      <div class="mobile-appStore">
+        <span class="mobile-app-item">
+          <svg class="mobile-app-group" width="30" height="30">
+            <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-apple"></use>
+          </svg>
+        </span>
 
-      <span class="mobile-app-item">
-        <svg class="mobile-app-group" width="30" height="30">
-          <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-android"></use>
-        </svg>
-      </span>
+        <span class="mobile-app-item">
+          <svg class="mobile-app-group" width="30" height="30">
+            <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-android"></use>
+          </svg>
+        </span>
+      </div>
     </div>
 
     <div class="mobile-app-image">
       <img
         class="mobile-app-img"
+        srcset="/mobile-app/assets/phone_video-188be371.png 288w, /mobile-app/assets/phone_video@2x-e7e5e66b.png 576w, /mobile-app/assets/phone_video_tablet-841c8b53.png 356w, /mobile-app/assets/phone_video@2x-e7e5e66b.png 712w, /mobile-app/assets/phone_video_desktop-776e106d.png 360w, /mobile-app/assets/phone_video_desktop@2x-0b963d8e.png 720w"
+        sizes="(min-width: 1280px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px "
         src="/mobile-app/assets/phone_video-188be371.png"
         alt="phone"
       />
@@ -247,7 +259,7 @@
   </div>
 </section>
 
-      <section class="team">
+      <section class="team" id="team">
   <div class="container">
     <h2 class="team-title">OUR TEAM</h2>
     <p class="team-text">
@@ -308,7 +320,7 @@
   </div>
 </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
   <div class="container">
     <h2 class="testimonials-title">WHAT OUR COSTUMER’S SAY</h2>
     <span class="testimonials-image">
@@ -332,90 +344,96 @@
 </section>
 
     </main>
-    <section class="footer">
+    <section class="footer" id="contact">
   <div class="container">
     <h2 class="footer-title">CONTACT US</h2>
-    <div class="footer-right">
-      <span class="footer-wrapper">
-        <input
-          class="footer-item"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Name"
-          required
-          pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
-          title="Alex"
-        />
-        <input
-          class="footer-item"
-          placeholder="Email"
-          type="email"
-          name="user-email"
-          id="user-email"
-          pattern="[]"
-          required
-        />
-      </span>
-      <textarea
-        class="footer-comment"
-        name="user-comment"
-        id="user-comment"
-        placeholder="Message"
-      ></textarea>
-      <span class="wrapper">
-        <button class="footer-btn" type="submit">SUBMIT</button>
-      </span>
-    </div>
+    <div class="footer-container">
+      <form class="footer-form">
+        <span class="footer-wrapper">
+          <input
+            class="footer-item"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
+            title="Alex"
+          />
+          <input
+            class="footer-item"
+            placeholder="Email"
+            type="email"
+            name="user-email"
+            id="user-email"
+            required
+          />
+        </span>
+        <textarea
+          class="footer-comment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Message"
+        ></textarea>
+        <span class="wrapper">
+          <button class="footer-btn" type="submit">SUBMIT</button>
+        </span>
+      </form>
 
-    <div class="footer-left">
-      <h3 class="footer-left-title">Get in touch with us</h3>
-      <p class="footer-left-text">
-        Have a question or comment about our app? Get in touch with us using the
-        contact form below and our team will respond shortly.
-      </p>
+      <div class="footer-left">
+        <h3 class="footer-left-title">Get in touch with us</h3>
+        <p class="footer-left-text">
+          Have a question or comment about our app? Get in touch with us using
+          the contact form below and our team will respond shortly.
+        </p>
 
-      <ul class="footer-sociale">
-        <li class="footer-sociale-item">
-          <a class="footer-svg-box" href="https://facebook.com">
-            <svg class="footer-sociale-info" width="20" height="20">
-              <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-sociale-item">
-          <a class="footer-svg-box" href="https://twitter.com">
-            <svg
-              class="footer-sociale-info"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
+        <ul class="footer-sociale">
+          <li class="footer-sociale-item">
+            <a class="footer-svg-box" href="https://facebook.com">
+              <svg class="footer-sociale-info" width="20" height="20">
+                <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-sociale-item">
+            <a class="footer-svg-box" href="https://twitter.com">
+              <svg
+                class="footer-sociale-info"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-sociale-item">
+            <a class="footer-svg-box" href="https://linkedin.com/">
+              <svg
+                class="footer-sociale-info"
+                width="20"
+                height="20"
+                fill="none"
+              >
+                <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-contact">
+          <li class="footer-social-container">
+            <a class="footer-sociale-contact" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
             >
-              <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-sociale-item">
-          <a class="footer-svg-box" href="https://linkedin.com/">
-            <svg class="footer-sociale-info" width="20" height="20" fill="none">
-              <use href="/mobile-app/assets/symbol-defs-dc9e8c13.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-      <ul class="footer-contact">
-        <li class="footer-social-container">
-          <a class="footer-sociale-contact" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li class="footer-social-container">
-          <a class="footer-sociale-contact" href="mailto:info@devstudio.com">
-            info@mobileapp.com</a
-          >
-        </li>
-      </ul>
+          </li>
+          <li class="footer-social-container">
+            <a class="footer-sociale-contact" href="mailto:info@devstudio.com">
+              info@mobileapp.com</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
