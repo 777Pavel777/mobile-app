@@ -15,14 +15,14 @@
 
     
     <script type="module" crossorigin src="/mobile-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/mobile-app/assets/index-88e43069.css">
+    <link rel="stylesheet" href="/mobile-app/assets/index-df87e2a7.css">
   </head>
   <body>
     <header>
   <nav class="header-menu">
     <a class="header-logo" href="/index.html">Mobileapp</a>
 
-    <button class="header-btn" type="button">
+    <button class="header-btn" type="button" id="is-open-mobile">
       <svg class="btn-close" width="32" height="32">
         <use href="../img/svg/symbol-defs.svg#icon-burger"></use>
       </svg>
@@ -40,11 +40,11 @@
 
 
     <main>
-      <div class="backdrop is-open-modal">
+      <div class="backdrop" id="mobile-menu">
   <div class="modal-container">
     <a class="modal-logo" href="/index.html">Mobileapp</a>
 
-    <button class="modal-btn-close" type="button">
+    <button class="modal-btn-close" type="button" id="mobile-close-btn">
       <svg class="btn-close" width="32" height="32">
         <use href="/mobile-app/assets/symbol-defs-06eaa0b0.svg#icon-close"></use>
       </svg>
