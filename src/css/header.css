@@ -36,6 +36,7 @@ header {
 
 .header-link-item {
   font-size: 12px;
+  transition: all 0.7s ease-in-out;
 }
 
 .header-link-item:hover {
@@ -43,6 +44,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /*====================================== BURGER */
@@ -97,7 +99,7 @@ header {
 
 /* ===================================== TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .header-menu {
     padding: 31px 32px;
   }
@@ -111,5 +113,19 @@ header {
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+
+  .header-links > li {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .header-links > li:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-menu {
+    padding: 31px 16px;
   }
 }

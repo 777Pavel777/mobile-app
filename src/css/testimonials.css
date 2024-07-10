@@ -64,12 +64,23 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .testimonials {
     padding: 40px 0;
   }
 
   .testimonials-title {
     font-size: 24px;
+  }
+
+  .testimonials-comment {
+    width: 704px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .testimonials-comment {
+    width: 855px;
   }
 }

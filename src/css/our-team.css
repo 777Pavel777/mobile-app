@@ -95,7 +95,7 @@
   color: var(--white);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .team {
     padding: 40px 0;
   }
@@ -105,12 +105,14 @@
   }
 
   .team-text {
+    width: 704px;
     font-size: 16px;
     margin-bottom: 40px;
+    margin: 0 auto 40px auto;
   }
 
   .our-team {
-    width: 768px;
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -121,5 +123,15 @@
 
   .team-item {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .team-text {
+    width: 855px;
+  }
+
+  .our-team {
+    max-width: 1280px;
   }
 }

@@ -1,29 +1,41 @@
 <section class="mobile-app">
   <div class="container">
-    <h2 class="mobile-app-title">WATCH THE VIDEO</h2>
-    <p class="mobile-app-text">
-      Watch the video below to see our mobile app in action. With a
-      user-friendly interface, personalized recommendations, secure
-      transactions, and real-time updates, our app is available for download on
-      both Apple and Android devices and is designed to make your life easier.
-    </p>
-    <div class="mobile-appStore">
-      <span class="mobile-app-item">
-        <svg class="mobile-app-group" width="30" height="30">
-          <use href="./img/svg/symbol-defs.svg#icon-apple"></use>
-        </svg>
-      </span>
+    <div>
+      <h2 class="mobile-app-title">WATCH THE VIDEO</h2>
+      <p class="mobile-app-text">
+        Watch the video below to see our mobile app in action. With a
+        user-friendly interface, personalized recommendations, secure
+        transactions, and real-time updates, our app is available for download
+        on both Apple and Android devices and is designed to make your life
+        easier.
+      </p>
+      <div class="mobile-appStore">
+        <span class="mobile-app-item">
+          <svg class="mobile-app-group" width="30" height="30">
+            <use href="./img/svg/symbol-defs.svg#icon-apple"></use>
+          </svg>
+        </span>
 
-      <span class="mobile-app-item">
-        <svg class="mobile-app-group" width="30" height="30">
-          <use href="./img/svg/symbol-defs.svg#icon-android"></use>
-        </svg>
-      </span>
+        <span class="mobile-app-item">
+          <svg class="mobile-app-group" width="30" height="30">
+            <use href="./img/svg/symbol-defs.svg#icon-android"></use>
+          </svg>
+        </span>
+      </div>
     </div>
 
     <div class="mobile-app-image">
       <img
         class="mobile-app-img"
+        srcset="
+          ./img/mobile/phone_video.png             288w,
+          ./img/mobile/phone_video@2x.png          576w,
+          ./img/tablet/phone_video_tablet.png      356w,
+          ./img/tablet/phone_video_tablet@2x.png   712w,
+          ./img/desktop/phone_video_desktop.png    360w,
+          ./img/desktop/phone_video_desktop@2x.png 720w
+        "
+        sizes="(min-width: 1280px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px "
         src="./img/mobile/phone_video.png"
         alt="phone"
       />
